@@ -1,0 +1,1 @@
+autocmd vimenter * NERDTree
