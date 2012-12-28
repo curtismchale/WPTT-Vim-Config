@@ -25,6 +25,7 @@ map <leader>f :Ack<space>
 
 " CTRL P
 map <leader>p :CtrlP<space>
+let g:ctrlp_working_path_mode = 'c'     " set CtrlP to search the current directory in Vim first
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
