@@ -28,7 +28,8 @@ map <leader>f :Ack<space>
 " CTRL P
 map <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|akismet\|uploads\|upgrade\|debug-bar\|debug-bar-cron-console\|debug-bar-action-hooks\|debug-bar-extender\|debug-bar-transients\|debug-bar-cron\|gravityforms\|gravityformsmailchimp\|debug-bar-extender\|twentyten\|twentyeleven\|twentytwelve'
+let g:ctrlp_custom_ignore =['debug[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
+
 
 "let g:ctrlp_working_path_mode = 'c'     " set CtrlP to search the current directory in Vim first
 
@@ -42,7 +43,7 @@ set noswapfile
 
 " NERDTree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-let NERDTreeIgnore=['debug[[dir]]']
+let NERDTreeIgnore=['debug[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
 
 " indenting
 set autoindent
