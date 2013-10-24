@@ -13,3 +13,6 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = git@github.com:tsaleh/vim-align.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
