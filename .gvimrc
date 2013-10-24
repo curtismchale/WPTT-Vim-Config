@@ -8,6 +8,8 @@ call pathogen#helptags()
 let mapleader = ","
 let g:mapleader = ","
 
+set exrc  " project level .vimrc files
+
 """""""""""""""""""""""""""
 " => Searching Stuff
 """""""""""""""""""""""""""
@@ -40,6 +42,7 @@ set noswapfile
 
 " NERDTree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+let NERDTreeIgnore=['debug[[dir]]']
 
 " indenting
 set autoindent
