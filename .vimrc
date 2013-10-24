@@ -1,1 +1,1 @@
-autocmd vimenter * NERDTree
+.gvimrc
