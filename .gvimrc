@@ -43,6 +43,7 @@ map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 " indenting
 set autoindent
+set smarttab
 
 " autoloading changed files
 set autoread
@@ -75,17 +76,15 @@ set guifont=Monaco:h14
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
-set expandtab
-
 " Be smart when using tabs ;)
 set smarttab
 
 " 1 tab == 4 spaces
-set tabstop=2                       " a tab is two spaces
-set shiftwidth=2                    " an autoindent (with <<) is two spaces
-set expandtab                       " spaces not tabs
+set tabstop=4                       " a tab is four spaces
+set shiftwidth=4                    " an autoindent (with <<) is four spaces
+"set expandtab                       " spaces not tabs
 set list                            " show invisibles
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<  "decides what whitespace to shaw
 set nowrap                          " don't wrap lines
 set backspace=indent,eol,start      " backspace through everything in insert mode
 
