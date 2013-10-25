@@ -25,6 +25,3 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = git@github.com:plasticboy/vim-markdown.git
