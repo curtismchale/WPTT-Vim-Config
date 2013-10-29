@@ -83,9 +83,7 @@ set guifont=Monaco:h14
 " Be smart when using tabs ;)
 set smarttab
 
-set wrap
-set linebreak
-set nolist
+set wrap linebreak nolist
 
 " map j to gj and k to gk, so line navigation ignores line wrap
 nmap j gj
