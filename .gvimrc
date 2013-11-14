@@ -75,7 +75,7 @@ if has( "gui_macvim" ) && has( "gui_running" )
 endif
 
 " setting my default font sizes
-set guifont=Monaco:h14
+set guifont=Monaco:h13
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
