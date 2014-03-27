@@ -6,7 +6,7 @@ This is my custome Vim configuration which is really for MacVim. Use it if you w
 
 Change to your root directory `cd ~/` and then clone the repository.
 
-`git clone --recursive git@github.com:curtismchale/WPTT-Vim-Config.git .vim`
+`git clone --recursive https://github.com/curtismchale/WPTT-Vim-Config.git .vim`
 
 Now use a symlink to point your .vimrc and .gvimrc files to the .gvimrc file inside the .vim folder. Back up your .gvimrc and .vimrc files if you aren't sure you want to make the jump with me.
 
