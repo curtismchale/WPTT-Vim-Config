@@ -19,7 +19,7 @@ Now all your vim/gvim configs are done in `.vim/.gvimrc`.
 
 To update the project you need to pull the master branch then pull each submodule with the command below.
 
-`git pull origin master && git submodule foreach git pull origin master`
+`git pull origin master && git submodule update --init --recursive`
 
 ## Submodules
 
