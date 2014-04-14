@@ -34,3 +34,9 @@
 [submodule "bundle/dash.vim"]
 	path = bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/phpcomplete.vim"]
+	path = bundle/phpcomplete.vim
+	url = git@github.com:shawncplus/phpcomplete.vim.git
