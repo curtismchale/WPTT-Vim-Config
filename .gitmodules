@@ -40,3 +40,6 @@
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
 	url = git@github.com:shawncplus/phpcomplete.vim.git
+[submodule "bundle/utlisnips"]
+	path = bundle/utlisnips
+	url = git@github.com:SirVer/ultisnips.git
