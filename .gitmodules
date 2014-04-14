@@ -43,3 +43,6 @@
 [submodule "bundle/utlisnips"]
 	path = bundle/utlisnips
 	url = git@github.com:SirVer/ultisnips.git
+[submodule "bundle/php"]
+	path = bundle/php
+	url = git@github.com:StanAngeloff/php.vim.git
