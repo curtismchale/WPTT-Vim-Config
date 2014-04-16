@@ -49,3 +49,6 @@
 [submodule "bundle/open-browser"]
 	path = bundle/open-browser
 	url = https://github.com/tyru/open-browser.vim.git
+[submodule "bundle/wordpress.vim"]
+	path = bundle/wordpress.vim
+	url = https://github.com/dsawardekar/wordpress.vim
