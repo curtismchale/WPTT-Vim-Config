@@ -69,3 +69,7 @@ LESS syntax for Vim
 
 Markdown highlighting for Vim
 
+### [WordPress.vim](https://github.com/dsawardekar/wordpress.vim)
+
+Adds a bunch of awesome WordPress specific functions like support for actions/filters in goto definitions.
+
