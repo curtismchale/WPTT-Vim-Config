@@ -32,9 +32,7 @@ set wildignore+=*/node_modules/*,*.swp,*.min.js
 map <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
 let g:ctrlp_custom_ignore =['debug[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
-
-
-"let g:ctrlp_working_path_mode = 'c'     " set CtrlP to search the current directory in Vim first
+let g:ctrlp_working_path_mode = 'c'     " set CtrlP to search the current directory in Vim first
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
