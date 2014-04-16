@@ -25,6 +25,9 @@ set incsearch
 " mapping search with Ack
 map <leader>f :Ack<space>
 
+" ignore patterns
+set wildignore+=*/node_modules/*,*.swp,*.min.js
+
 " CTRL P
 map <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
