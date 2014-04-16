@@ -63,7 +63,7 @@ My prefered colour scheme
 
 ### Vim LESS
 
-LESS syntaxt for Vim
+LESS syntax for Vim
 
 ### Vim Markdown
 
