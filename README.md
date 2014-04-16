@@ -1,6 +1,8 @@
 # WPTT-Vim-Config
 
-This is my custome Vim configuration which is really for MacVim. Use it if you want or don't
+This is my custom Vim configuration which is really for MacVim. Use it if you want or don't.
+
+I type DVORAK so some of my mappings may feel odd for you silly QWERTY people. I won't be taking any pull requests to change mappings (unless you have a really good case to prove me wrong).
 
 ## Install
 
