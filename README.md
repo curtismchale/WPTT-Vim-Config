@@ -16,6 +16,10 @@ Now use a symlink to point your .vimrc and .gvimrc files to the .gvimrc file ins
 
 Now all your vim/gvim configs are done in `.vim/.gvimrc`.
 
+There are a few dependencies that you'll need that don't come with the repository.
+
+1. [Exuberant CTags](http://ctags.sourceforge.net/) - `brew install ctags`. If you don't have homebrew installed [go get it](http://brew.sh/)
+2. [Ack](http://beyondgrep.com/) - `brew install ack`
 
 ## Update
 
