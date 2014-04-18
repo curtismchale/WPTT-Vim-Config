@@ -115,3 +115,12 @@ Adds a bunch of awesome WordPress specific functions like support for actions/fi
 
 Check out the repository above to see the power that's now at your finger tips.
 
+### Setting up CTags
+
+CTags are very powerful but always feel like dark magic. There are a few steps to generate Ctags.
+
+**First**: Start by changing directory `cd` to the top level of your project which should be at the same level of your `wp-config.php`. Now type `ctags -R --exclude=node_modules`. That will recursively generate your CTags but ignores the `node_modules` folder. I've just always had trouble with tags and that folder.
+
+**Second**: Tell Vim about your tags. The easiest way to to add a project level `.vimrc` file `set tags+=./tags,tags,~/Path/to/your/site/tags`. That final path should be to the tags file set at the same level as your project `wp-config.php`.
+
+**Third**: Generate tags again after some changes. I'm told that you can get your CTags generating for yourself on a git hook but I've had trouble which probably has more to do with my bash skills than anything. Here is the [issue](https://github.com/curtismchale/WPTT-Vim-Config/issues/5) for me to figure it out and the link to the tutorial on setting it up.
