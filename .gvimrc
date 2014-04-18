@@ -25,9 +25,6 @@ set incsearch
 " mapping search with Ack
 map <leader>f :Ack<space>
 
-" ignore patterns
-set wildignore+=*/node_modules/*,*.swp,*.min.js,*.pot,*.po,*.mo
-
 " CTRL P
 map <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
@@ -56,10 +53,11 @@ set autoread
 " nerdcommenter
 filetype plugin on
 
-" PHP documenter script bound to Control-P
+" PDV - PHP documenter script bound to Control-P
 autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
 autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
 autocmd FileType php vnoremap <C-p> :call PhpDocRange()<CR>
+let g:pdv_template_dir = $HOME . "/.vim/bundle/pdv/templates_snip"
 
 """""""""""""""""""""""""""
 " Colours and Fonts
@@ -91,13 +89,12 @@ nmap j gj
 nmap k gk
 
 " 1 tab == 4 spaces
-set tabstop=4                       " a tab is four spaces
-set shiftwidth=4                    " an autoindent (with <<) is four spaces
-"set expandtab                       " spaces not tabs
-set list                            " show invisibles
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<  "decides what whitespace to shaw
-set nowrap                          " don't wrap lines
-set backspace=indent,eol,start      " backspace through everything in insert mode
+set tabstop=4                                           " a tab is four spaces
+set shiftwidth=4                                        " an autoindent (with <<) is four spaces
+set list                                                " show invisibles
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< " decides what whitespace to shaw
+set nowrap                                              " don't wrap lines
+set backspace=indent,eol,start                          " backspace through everything in insert mode
 
 " line numbers
 set number
@@ -128,6 +125,13 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
+
+" Node and JS stuff
+set wildignore+=*/node_modules/*,*.min.js
+
+" WP Language files
+set wildignore+=*.pot,*.po,*.mo
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => View Ports

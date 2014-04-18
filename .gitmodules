@@ -1,33 +1,33 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
-	url = git@github.com:mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = git@github.com:kien/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/align"]
 	path = bundle/align
-	url = git@github.com:tsaleh/vim-align.git
+	url = https://github.com/tsaleh/vim-align.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
-	url = git@github.com:groenewege/vim-less.git
+	url = https://github.com/groenewege/vim-less.git
 [submodule "bundle/pdv"]
 	path = bundle/pdv
-	url = git@github.com:tobyS/pdv.git
+	url = https://github.com/tobyS/pdv.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = git@github.com:plasticboy/vim-markdown.git
+	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/funcoo.vim"]
 	path = bundle/funcoo.vim
 	url = https://github.com/rizzatti/funcoo.vim.git
@@ -36,16 +36,22 @@
 	url = https://github.com/rizzatti/dash.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git@github.com:ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
-	url = git@github.com:shawncplus/phpcomplete.vim.git
+	url = https://github.com/shawncplus/phpcomplete.vim.git
 [submodule "bundle/utlisnips"]
 	path = bundle/utlisnips
-	url = git@github.com:SirVer/ultisnips.git
+	url = https://github.com/SirVer/ultisnips.git
 [submodule "bundle/php"]
 	path = bundle/php
-	url = git@github.com:StanAngeloff/php.vim.git
+	url = https://github.com/StanAngeloff/php.vim.git
 [submodule "bundle/open-browser"]
 	path = bundle/open-browser
-	url = git@github.com:tyru/open-browser.vim.git
+	url = https://github.com/tyru/open-browser.vim.git
+[submodule "bundle/wordpress.vim"]
+	path = bundle/wordpress.vim
+	url = https://github.com/dsawardekar/wordpress.vim
+[submodule "bundle/vmustache"]
+	path = bundle/vmustache
+	url = https://github.com/tobyS/vmustache.git
