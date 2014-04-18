@@ -52,3 +52,6 @@
 [submodule "bundle/wordpress.vim"]
 	path = bundle/wordpress.vim
 	url = https://github.com/dsawardekar/wordpress.vim
+[submodule "bundle/vmustache"]
+	path = bundle/vmustache
+	url = https://github.com/tobyS/vmustache.git
