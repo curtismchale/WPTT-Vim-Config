@@ -94,7 +94,6 @@ nmap k gk
 " 1 tab == 4 spaces
 set tabstop=4                       " a tab is four spaces
 set shiftwidth=4                    " an autoindent (with <<) is four spaces
-"set expandtab                       " spaces not tabs
 set list                            " show invisibles
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<  "decides what whitespace to shaw
 set nowrap                          " don't wrap lines
