@@ -97,11 +97,11 @@ https://github.com/curtismchale/WPTT-Vim-Config/issues/4
 
 Syntax highlighting that's better. Will show you PHP errors with `>>` in the side of your editor.
 
-### [Vim Colors Solarized[(https://github.com/altercation/vim-colors-solarized)
+### [Vim Colors Solarized](https://github.com/altercation/vim-colors-solarized)
 
 My prefered colour scheme
 
-### [Vim LESS[(https://github.com/groenewege/vim-less)
+### [Vim LESS](https://github.com/groenewege/vim-less)
 
 LESS syntax for Vim
 
