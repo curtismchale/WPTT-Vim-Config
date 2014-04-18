@@ -92,7 +92,7 @@ nmap k gk
 set tabstop=4                                           " a tab is four spaces
 set shiftwidth=4                                        " an autoindent (with <<) is four spaces
 set list                                                " show invisibles
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< " decides what whitespace to shaw
+set listchars=eol:',tab:>-,trail:~,extends:>,precedes:< " decides what whitespace to shaw
 set nowrap                                              " don't wrap lines
 set backspace=indent,eol,start                          " backspace through everything in insert mode
 
@@ -100,14 +100,6 @@ set backspace=indent,eol,start                          " backspace through ever
 set number
 set ruler
 
-" List chars
-set listchars=""                      " Reset the listchars
-set listchars=tab:\ \                 " a tab should display as "  ", trailing whitespace as "."
-set listchars+=trail:.                " show trailing spaces as dots
-set listchars+=extends:>              " The character to show in the last column when wrap is
-                                      " off and the line continues beyond the right of the screen
-set listchars+=precedes:<             " The character to show in the last column when wrap is
-                                      " off and the line continues beyond the right of the screen
 autocmd BufWritePre * :%s/\s\+$//e    " remove trailing spaces on save
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
