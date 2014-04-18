@@ -25,9 +25,6 @@ set incsearch
 " mapping search with Ack
 map <leader>f :Ack<space>
 
-" ignore patterns
-set wildignore+=*/node_modules/*,*.swp,*.min.js,*.pot,*.po,*.mo
-
 " CTRL P
 map <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
@@ -128,6 +125,13 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
+
+" Node and JS stuff
+set wildignore+=*/node_modules/*,*.min.js
+
+" WP Language files
+set wildignore+=*.pot,*.po,*.mo
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => View Ports
