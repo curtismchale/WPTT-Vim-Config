@@ -52,3 +52,6 @@
 [submodule "bundle/wordpress.vim"]
 	path = bundle/wordpress.vim
 	url = https://github.com/dsawardekar/wordpress.vim
+[submodule "bundle/Smart-Tabs"]
+	path = bundle/Smart-Tabs
+	url = git@github.com:vim-scripts/Smart-Tabs.git
