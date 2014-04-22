@@ -115,6 +115,10 @@ Adds a bunch of awesome WordPress specific functions like support for actions/fi
 
 Check out the repository above to see the power that's now at your finger tips.
 
+### [Smart Tabs](https://github.com/vim-scripts/Smart-Tabs)
+
+WordPress wants tabs up front and spaces for alignment in the middle of the line. Smart Tabs does this for us.
+
 ### Setting up CTags
 
 CTags are very powerful but always feel like dark magic. There are a few steps to generate Ctags.
