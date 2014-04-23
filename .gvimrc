@@ -9,9 +9,9 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " searching and file management
-Bundle 'mileszs/ack'
+Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp'
+Bundle 'kien/ctrlp.vim'
 
 " Alignment and commenting
 Bundle 'tsaleh/vim-align'
@@ -20,26 +20,25 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/Smart-Tabs'
 
 " Hints
-Bundle 'ervandrew/supertab'
-Bundle 'SirVer/utlisnipts'
-Bundle 'dsawarkekar/wordpress'
+Bundle 'ervandew/supertab'
+Bundle 'SirVer/ultisnips'
+Bundle 'dsawardekar/wordpress.vim'
 
 " Syntax
 Bundle 'scrooloose/syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'shawncplus/phpcomplete'
-Bundle 'StanAngeloff/php'           " @todo does this 2x the bundle above?
-
+Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'StanAngeloff/php.vim'
 " colors
 Bundle 'altercation/vim-colors-solarized'
 
 " Dash
-Bundle 'rizzatti/funcoo' " dash requires this
-Bundle 'rizzatti/dash'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 " Misc
-Bundle 'tyru/open-browser' " required by wordpress.vim for the open browser function
+Bundle 'tyru/open-browser.vim'
 '
 " mapping my leader to comma
 let mapleader = ","
