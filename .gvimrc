@@ -1,9 +1,46 @@
-"""""""""""""""""""""""""""
-" => Pathogen for some sane package management
-"""""""""""""""""""""""""""
-call pathogen#infect()
-call pathogen#helptags()
+set nocompatible    " be iMproved, required
+filetype off        " required
 
+" set runtime path
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" let Vundle manage vundle
+Plugin 'gmarik/vundle'
+
+" searching and file management
+Bundle 'mileszs/ack'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp'
+
+" Alignment and commenting
+Bundle 'tsaleh/vim-align'
+Bundle 'tobyS/pdv'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'vim-scripts/Smart-Tabs'
+
+" Hints
+Bundle 'ervandrew/supertab'
+Bundle 'SirVer/utlisnipts'
+Bundle 'dsawarkekar/wordpress'
+
+" Syntax
+Bundle 'scrooloose/syntastic'
+Bundle 'groenewege/vim-less'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'shawncplus/phpcomplete'
+Bundle 'StanAngeloff/php'           " @todo does this 2x the bundle above?
+
+" colors
+Bundle 'altercation/vim-colors-solarized'
+
+" Dash
+Bundle 'rizzatti/funcoo' " dash requires this
+Bundle 'rizzatti/dash'
+
+" Misc
+Bundle 'tyru/open-browser' " required by wordpress.vim for the open browser function
+'
 " mapping my leader to comma
 let mapleader = ","
 let g:mapleader = ","
