@@ -8,7 +8,7 @@ I type DVORAK so some of my mappings may feel odd for you silly QWERTY people. I
 
 Change to your root directory `cd ~/` and then clone the repository.
 
-`git clone --recursive https://github.com/curtismchale/WPTT-Vim-Config.git .vim`
+`git clone https://github.com/curtismchale/WPTT-Vim-Config.git .vim`
 
 Now use a symlink to point your .vimrc and .gvimrc files to the .gvimrc file inside the .vim folder. Back up your .gvimrc and .vimrc files if you aren't sure you want to make the jump with me.
 
@@ -23,15 +23,16 @@ There are a few dependencies that you'll need that don't come with the repositor
 
 ## Update
 
-To update the project you need to pull the master branch then pull each submodule with the command below.
+Pull the master branch for this repository then use the Vundle update command below.
 
-`git pull origin master && git submodule update --init --recursive`
+`:BundleInstall!`
 
 ## Submodules
 
-### [Pathogen](https://github.com/tpope/vim-pathogen)
+### [Vundle](https://github.com/gmarik/Vundle.vim)
 
-Makes a bunch of stuff in the install process of Vim plugins easier
+Sane package management for Vim. No more submodules
+
 
 ### [ack.vim](https://github.com/mileszs/ack.vim)
 
