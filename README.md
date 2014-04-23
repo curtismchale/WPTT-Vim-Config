@@ -10,11 +10,15 @@ Change to your root directory `cd ~/` and then clone the repository.
 
 `git clone https://github.com/curtismchale/WPTT-Vim-Config.git .vim`
 
+Install [Vundle](https://github.com/gmarik/Vundle.vim) by typing `git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle`
+
 Now use a symlink to point your .vimrc and .gvimrc files to the .gvimrc file inside the .vim folder. Back up your .gvimrc and .vimrc files if you aren't sure you want to make the jump with me.
 
 `ln -s .vim/.gvimrc .gvimrc && ln -s .vim/.gvimrc .vimrc`
 
 Now all your vim/gvim configs are done in `.vim/.gvimrc`.
+
+Open vim and then type `:BundleInstall` which tells Vundle to install all the bundles defined in your Vim config.
 
 There are a few dependencies that you'll need that don't come with the repository.
 
