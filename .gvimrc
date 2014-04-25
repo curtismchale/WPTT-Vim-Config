@@ -23,12 +23,12 @@ Bundle 'vim-scripts/Smart-Tabs'
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
 Bundle 'dsawardekar/wordpress.vim'
+Bundle 'shawncplus/phpcomplete.vim'
 
 " Syntax
 Bundle 'scrooloose/syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'StanAngeloff/php.vim'
 " colors
 Bundle 'altercation/vim-colors-solarized'
