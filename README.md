@@ -94,9 +94,10 @@ I've added a custom ignore pattern for files often in my WordPress projects that
 
 ### [PDV](https://github.com/tobyS/pdv)
 
-In theory this does PHP docblock building for you, but it doesn't work right now.
+Allows you to make docblocks fast. Here it's mapped to Control-r so it doesn't interfere with CTRL-P. I don't currently having it using Utlsnip templates but will look in to it in the future.
 
-https://github.com/curtismchale/WPTT-Vim-Config/issues/4
+PDV requires [vmustache](https://github.com/tobyS/vmustache) for it's internal templating engine.
+
 
 ### [Syntastic](https://github.com/scrooloose/syntastic)
 
