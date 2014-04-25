@@ -91,11 +91,9 @@ set autoread
 " nerdcommenter
 filetype plugin on
 
-" PDV - PHP documenter script bound to Control-P
-autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
-autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
-autocmd FileType php vnoremap <C-p> :call PhpDocRange()<CR>
+" PDV - PHP documenter script bound to Control-r
 let g:pdv_template_dir = "~/.vim/bundle/pdv/templates_snip"
+nnoremap <C-r> :call pdv#DocumentCurrentLine()<CR>
 
 """""""""""""""""""""""""""
 " Colours and Fonts
