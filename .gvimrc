@@ -15,6 +15,7 @@ Bundle 'kien/ctrlp.vim'
 
 " Alignment and commenting
 Bundle 'tsaleh/vim-align'
+Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/Smart-Tabs'
@@ -30,6 +31,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'StanAngeloff/php.vim'
+
 " colors
 Bundle 'altercation/vim-colors-solarized'
 
