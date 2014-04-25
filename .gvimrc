@@ -92,7 +92,7 @@ set autoread
 filetype plugin on
 
 " PDV - PHP documenter script bound to Control-r
-let g:pdv_template_dir = "~/.vim/bundle/pdv/templates_snip"
+let g:pdv_template_dir = $HOME."/.vim/bundle/pdv/templates_snip"
 nnoremap <C-r> :call pdv#DocumentCurrentLine()<CR>
 
 """""""""""""""""""""""""""
