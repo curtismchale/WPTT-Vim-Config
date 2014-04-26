@@ -124,6 +124,14 @@ Check out the repository above to see the power that's now at your finger tips.
 
 WordPress wants tabs up front and spaces for alignment in the middle of the line. Smart Tabs does this for us.
 
+### [Vim Airline](https://github.com/bling/vim-airline)
+
+Light weight status line for Vim.
+
+### [Vim Fugitive](https://github.com/tpope/vim-fugitive)
+
+Bring some more Git goodness right in Vim.
+
 ### Setting up CTags
 
 CTags are very powerful but always feel like dark magic. There are a few steps to generate Ctags.
