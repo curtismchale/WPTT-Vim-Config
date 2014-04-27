@@ -107,6 +107,8 @@ Syntax highlighting that's better. Will show you PHP errors with `>>` in the sid
 
 My prefered colour scheme set to dark mode and will be the colour for terminal vim and MacVim if you're using it.
 
+If you're running in iTerm 2 (like me) then you need to download the [Solarized Scheme](https://github.com/altercation/solarized) and then import it. Proper directions can be found in the readme [here](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized).
+
 ### [Vim LESS](https://github.com/groenewege/vim-less)
 
 LESS syntax for Vim
