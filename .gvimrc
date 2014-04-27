@@ -42,7 +42,10 @@ Bundle 'rizzatti/dash.vim'
 " Misc
 Bundle 'tyru/open-browser.vim'
 Bundle 'bling/vim-airline'
+
+" Git
 Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 
 " mapping my leader to comma
 let mapleader = ","
@@ -54,15 +57,15 @@ set exrc
 """""""""""""""""""""""""""
 " => Airline stuff basically stolen at this point from Travis Northcutt
 """""""""""""""""""""""""""
-set laststatus=2 " Enable statusline
+set laststatus=2                        " Enable statusline
 
 set statusline=
 set statusline=%{fugitive#statusline()} " Add git status from vim-fugitive plugin
-set statusline=%tyru"tail of the filename
-set statusline+=%=      "left/right separator
-set statusline+=%c,     "cursor column
-set statusline+=%l/%L   "cursor line/total lines
-set statusline+=\ %P    "percent through file
+set statusline=%tyru                    " tail of the filename
+set statusline+=%=                      " left/right separator
+set statusline+=%c,                     " cursor column
+set statusline+=%l/%L                   " cursor line/total lines
+set statusline+=\ %P                    " percent through file
 
 """""""""""""""""""""""""""
 " => Searching Stuff
