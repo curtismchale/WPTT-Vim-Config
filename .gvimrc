@@ -120,13 +120,14 @@ nnoremap <C-r> :call pdv#DocumentCurrentLine()<CR>
 
 " Syntax Highlighing
 syntax enable
+syntax on
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
-if has( "gui_macvim" ) && has( "gui_running" )
-  set background=dark
-  colorscheme solarized
-endif
+
+" Setting solarized dark
+set background=dark
+colorscheme solarized
 
 " setting my default font sizes
 set guifont=Monaco:h13
