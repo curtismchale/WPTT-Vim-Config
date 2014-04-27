@@ -105,7 +105,7 @@ Syntax highlighting that's better. Will show you PHP errors with `>>` in the sid
 
 ### [Vim Colors Solarized](https://github.com/altercation/vim-colors-solarized)
 
-My prefered colour scheme
+My prefered colour scheme set to dark mode and will be the colour for terminal vim and MacVim if you're using it.
 
 ### [Vim LESS](https://github.com/groenewege/vim-less)
 
