@@ -10,7 +10,7 @@ Change to your root directory `cd ~/` and then clone the repository.
 
 `git clone https://github.com/curtismchale/WPTT-Vim-Config.git .vim`
 
-Install [Vundle](https://github.com/gmarik/Vundle.vim) by typing `git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle`
+Install [Vundle](https://github.com/gmarik/Vundle.vim) by typing `git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/vundle`
 
 Now use a symlink to point your .vimrc and .gvimrc files to the .gvimrc file inside the .vim folder. Back up your .gvimrc and .vimrc files if you aren't sure you want to make the jump with me.
 
