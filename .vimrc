@@ -1,1 +1,1 @@
-.gvimrc
+" General Vim configuration
