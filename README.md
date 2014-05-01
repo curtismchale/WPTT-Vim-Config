@@ -14,7 +14,7 @@ Install [Vundle](https://github.com/gmarik/Vundle.vim) by typing `git clone http
 
 Now use a symlink to point your .vimrc and .gvimrc files to the copies inside the .vim folder. Back up your .gvimrc and .vimrc files if you aren't sure you want to make the jump with me.
 
-`ln -s .vim/.gvimrc .gvimrc && ln -s .vim/.vimrc .vimrc`
+`ln -s ~/.vim/.gvimrc ~/.gvimrc && ln -s ~/.vim/.vimrc ~/.vimrc`
 
 Now all your vim/gvim configs are done in `.vim/.vimrc` and `.vim/.gvimrc`.
 
