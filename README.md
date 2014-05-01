@@ -12,11 +12,11 @@ Change to your root directory `cd ~/` and then clone the repository.
 
 Install [Vundle](https://github.com/gmarik/Vundle.vim) by typing `git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/vundle`
 
-Now use a symlink to point your .vimrc and .gvimrc files to the .gvimrc file inside the .vim folder. Back up your .gvimrc and .vimrc files if you aren't sure you want to make the jump with me.
+Now use a symlink to point your .vimrc and .gvimrc files to the copies inside the .vim folder. Back up your .gvimrc and .vimrc files if you aren't sure you want to make the jump with me.
 
-`ln -s .vim/.gvimrc .gvimrc && ln -s .vim/.gvimrc .vimrc`
+`ln -s ~/.vim/.gvimrc ~/.gvimrc && ln -s ~/.vim/.vimrc ~/.vimrc`
 
-Now all your vim/gvim configs are done in `.vim/.gvimrc`.
+Now all your vim/gvim configs are done in `.vim/.vimrc` and `.vim/.gvimrc`.
 
 Open vim and then type `:BundleInstall` which tells Vundle to install all the bundles defined in your Vim config.
 
@@ -46,7 +46,7 @@ Need this for CTRLP searching. **Don't forget you need ACK installed on your com
 
 Mapped to <leader>p and does project searching of files just like that fancy IDE you have around.
 
-There is a custom ignore pattern in the .gvimrc file for directories that I usually ignore in projects.
+There is a custom ignore pattern in the .vimrc file for directories that I usually ignore in projects.
 
 ### [Align](https://github.com/tsaleh/vim-align)
 
