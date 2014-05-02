@@ -36,8 +36,8 @@ Bundle 'StanAngeloff/php.vim'
 Bundle 'altercation/vim-colors-solarized'
 
 " Dash
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
+"Bundle 'rizzatti/funcoo.vim'
+"Bundle 'rizzatti/dash.vim'
 
 " Misc
 Bundle 'tyru/open-browser.vim'
