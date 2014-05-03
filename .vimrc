@@ -193,3 +193,29 @@ set wildignore+=*.pot,*.po,*.mo
 
 " Adjust viewports to the same size
 map <leader>= <C-w>=
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Mappings and Shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Map jk to ESC in visual mode
+"http://learnvimscriptthehardway.stevelosh.com/chapters/10.html
+inoremap jk <esc>
+
+" Map <leader>ev (i.e. \ev) to edit .vimrc
+" and <leader>sv to source (apply) .vimrc
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Map <leader>eg (i.e. \eg) to edit .gvimrc
+" and <leader>sg to source (apply) .gvimrc
+nnoremap <leader>eg :split $MYGVIMRC<cr>
+nnoremap <leader>sg :source $MYGVIMRC<cr>
+
+" Map <leader>el to error_log value
+" takes the whatever is under the cursor and wraps it in error_log( and
+" print_r( with parameter true and a label
+autocmd FileType php nnoremap <leader>el ^vg_daerror_log( '<esc>pa=' . print_r( <esc>pa, true ) );<cr><esc>
+
+" Clean trailing whitespace, https://bitbucket.org/sjl/dotfiles/src/a9942801b4db6154a5ce0ccae604da6821051cac/vim/vimrc?at=default
+nnoremap <leader>w mz:%s/\s\+$//<cr>:let @/=''<cr>`z
