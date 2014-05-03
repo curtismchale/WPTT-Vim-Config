@@ -59,6 +59,11 @@ let g:mapleader = ","
 set exrc
 
 """""""""""""""""""""""""""
+" => use clipboard as primary register for y,d,p
+"""""""""""""""""""""""""""
+set clipboard=unnamed
+
+"""""""""""""""""""""""""""
 " => Airline stuff basically stolen at this point from Travis Northcutt
 """""""""""""""""""""""""""
 set laststatus=2                        " Enable statusline
