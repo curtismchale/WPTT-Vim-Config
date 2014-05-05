@@ -221,6 +221,3 @@ nnoremap <leader>sg :source $MYGVIMRC<cr>
 " takes the whatever is under the cursor and wraps it in error_log( and
 " print_r( with parameter true and a label
 autocmd FileType php nnoremap <leader>el ^vg_daerror_log( '<esc>pa=' . print_r( <esc>pa, true ) );<cr><esc>
-
-" Clean trailing whitespace, https://bitbucket.org/sjl/dotfiles/src/a9942801b4db6154a5ce0ccae604da6821051cac/vim/vimrc?at=default
-nnoremap <leader>w mz:%s/\s\+$//<cr>:let @/=''<cr>`z
