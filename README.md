@@ -25,6 +25,17 @@ There are a few dependencies that you'll need that don't come with the repositor
 1. [Exuberant CTags](http://ctags.sourceforge.net/) - `brew install ctags`. If you don't have homebrew installed [go get it](http://brew.sh/)
 2. [Ack](http://beyondgrep.com/) - `brew install ack`
 
+### Problems with Git Commit Messages
+On a Mac, if you're getting the message
+```
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+```
+when you try to create a Git commit message with Vim, the issue is an [incorrect error code being returned](http://tooky.co.uk/there-was-a-problem-with-the-editor-vi-git-on-mac-os-x/).
+
+You can fix this problem by running
+`git config --global core.editor /usr/bin/vim`
+
 ## Update
 
 Pull the master branch for this repository then use the Vundle update command below.
