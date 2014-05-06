@@ -108,7 +108,7 @@ set nowb
 set noswapfile
 
 " NERDTree
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader>n :execute 'NERDTreeToggle ' . getcwd()<CR>
 let NERDTreeIgnore=['debug[[dir]]', 'hyperdb[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
 
 " indenting
@@ -123,7 +123,7 @@ filetype plugin on
 
 " PDV - PHP documenter script bound to Control-r
 let g:pdv_template_dir = $HOME."/.vim/bundle/pdv/templates_snip"
-nnoremap <C-r> :call pdv#DocumentCurrentLine()<CR>
+map <leader>d :call pdv#DocumentCurrentLine()<CR>
 
 """""""""""""""""""""""""""
 " Colours and Fonts
