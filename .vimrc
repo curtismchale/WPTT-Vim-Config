@@ -121,7 +121,7 @@ set autoread
 " nerdcommenter
 filetype plugin on
 
-" PDV - PHP documenter script bound to Control-r
+" PDV - PHP documenter script
 let g:pdv_template_dir = $HOME."/.vim/bundle/pdv/templates_snip"
 map <leader>d :call pdv#DocumentCurrentLine()<CR>
 
