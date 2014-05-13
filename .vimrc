@@ -207,6 +207,13 @@ map <leader>= <C-w>=
 "http://learnvimscriptthehardway.stevelosh.com/chapters/10.html
 inoremap jk <esc>
 
+" Map 
+" :A $symbol 
+" to 
+" :Align $symbol
+" as a shortcut for vim-align plugin
+com! -bang -range -nargs=* A <line1>,<line2>call Align#Align(<bang>0,<q-args>)
+
 " Map <leader>ev (i.e. \ev) to edit .vimrc
 " and <leader>sv to source (apply) .vimrc
 nnoremap <leader>ev :split $MYVIMRC<cr>
