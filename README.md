@@ -70,7 +70,7 @@ $args = array(
 );
 ```
 
-Given the code above highlight it all then type `:Align =>` to get the results below.
+Given the code above highlight it all then type `:A =>` to get the results below.
 
 ```php
 $args = array(
@@ -80,6 +80,8 @@ $args = array(
 ```
 
 Will also work with other symbols like `=`.
+
+The default mapping for Align is `:Align $symbol`. I type that wrong way to much so here it's mapped to `:A $symbol` to cut down the typing needed.
 
 ### [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
 
