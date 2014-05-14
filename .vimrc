@@ -169,6 +169,15 @@ set ruler
 
 autocmd FileType c,cpp,java,php,javascript autocmd BufWritePre * :%s/\s\+$//e    " remove trailing spaces on save
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Modify word boundary characters
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" remove - as a word boundary (i.e. making a keyword character)
+set iskeyword+=-
+" remove $ as a word boundary (i.e. making a keyword character)
+set iskeyword+=$
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Wild settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
