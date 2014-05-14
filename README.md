@@ -53,9 +53,12 @@ Sane package management for Vim. No more submodules
 
 Need this for CTRLP searching. **Don't forget you need ACK installed on your computer as well.**
 
+Basic Usage `:Ack [options] {pattern} [{directories}]`  
+Example `:Ack 'my_title_filter\(''`
+
 ### [CTRLP](https://github.com/kien/ctrlp.vim)
 
-Mapped to <leader>p and does project searching of files just like that fancy IDE you have around.
+`Ctrl+p` or `<leader>p` in normal mode does project searching of files just like that fancy IDE you have around.
 
 There is a custom ignore pattern in the .vimrc file for directories that I usually ignore in projects.
 
@@ -101,13 +104,22 @@ Lots more information in the documentation on the project so go read it.
 
 File browser bar on the side of your editor.
 
-Default toggle is `<leader>d`. If you want to show hidden files type `I` while in NERDTree.
+`<leader>n` toggles the file browser.
+
+Shortcuts inside NERDTree  
+`I`: Toggle hidden files  
+`?`: Toggle NERD Tree's quick help  
+`m`: Show the NERD Tree menu  
+`t`: Open the selected file in a new tab  
+`R`: Refresh the tree, useful if files change outside of Vim  
+`i`: Open the selected file in a horizontal split window  
+`s`: Open the selected file in a vertical split window  
 
 I've added a custom ignore pattern for files often in my WordPress projects that I don't actually want to see in NERDTree like all the debug-bar* plugins.
 
 ### [PDV](https://github.com/tobyS/pdv)
 
-Allows you to make docblocks fast. Here it's mapped to Control-r so it doesn't interfere with CTRL-P. I don't currently having it using Utlsnip templates but will look in to it in the future.
+Allows you to make docblocks fast. Here it's mapped to <leader>d. I don't currently having it using Utlsnip templates but will look in to it in the future.
 
 PDV requires [vmustache](https://github.com/tobyS/vmustache) for it's internal templating engine.
 
@@ -157,3 +169,10 @@ CTags are very powerful but always feel like dark magic. There are a few steps t
 **Second**: Tell Vim about your tags. The easiest way to to add a project level `.vimrc` file `set tags+=./tags,tags,~/Path/to/your/site/tags`. That final path should be to the tags file set at the same level as your project `wp-config.php`.
 
 **Third**: Generate tags again after some changes. I'm told that you can get your CTags generating for yourself on a git hook but I've had trouble which probably has more to do with my bash skills than anything. Here is the [issue](https://github.com/curtismchale/WPTT-Vim-Config/issues/5) for me to figure it out and the link to the tutorial on setting it up.
+
+Example (to be run from root of the project):
+`ctags -R --exclude=node_modules; echo 'set tags+=./tags,tags,tags'>.vimrc`
+
+Once, this command is run re-open your files in Vim and
+completion (using `Ctrl+p` or `Tab`) should use the ctags generated
+information.
