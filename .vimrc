@@ -91,10 +91,10 @@ set hlsearch
 set incsearch
 
 " mapping search with Ack
-map <leader>f :Ack<space>
+nnoremap <leader>f :Ack<space>
 
 " CTRL P
-map <leader>p :CtrlP<cr>
+nnoremap <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
 let g:ctrlp_custom_ignore =['debug[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
 
@@ -107,7 +107,7 @@ set nowb
 set noswapfile
 
 " NERDTree
-map <leader>n :execute 'NERDTreeToggle ' . getcwd()<CR>
+nnoremap <leader>n :execute 'NERDTreeToggle ' . getcwd()<CR>
 let NERDTreeIgnore=['debug[[dir]]', 'hyperdb[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
 
 " indenting
@@ -122,7 +122,7 @@ filetype plugin on
 
 " PDV - PHP documenter script
 let g:pdv_template_dir = $HOME."/.vim/bundle/pdv/templates_snip"
-map <leader>d :call pdv#DocumentCurrentLine()<CR>
+noremap <leader>d :call pdv#DocumentCurrentLine()<CR>
 
 """""""""""""""""""""""""""
 " Colours and Fonts
@@ -151,8 +151,8 @@ set smarttab
 set wrap linebreak nolist
 
 " map j to gj and k to gk, so line navigation ignores line wrap
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
 
 " 1 tab == 4 spaces
 set tabstop=4                                           " a tab is four spaces
@@ -205,7 +205,7 @@ set wildignore+=*.pot,*.po,*.mo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Adjust viewports to the same size
-map <leader>= <C-w>=
+noremap <leader>= <C-w>=
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mappings and Shortcuts
