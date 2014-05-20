@@ -160,19 +160,18 @@ Light weight status line for Vim.
 
 Bring some more Git goodness right in Vim.
 
-### Setting up CTags
+### Setting up Ctags
 
-CTags are very powerful but always feel like dark magic. There are a few steps to generate Ctags.
+Ctags are very powerful but always feel like dark magic. There are a few steps to generate ctags.
 
-**First**: Start by changing directory `cd` to the top level of your project which should be at the same level of your `wp-config.php`. Now type `ctags -R --exclude=node_modules`. That will recursively generate your CTags but ignores the `node_modules` folder. I've just always had trouble with tags and that folder.
+**First**: Start by changing directory `cd` to the top level of your project which should be at the same level of your `wp-config.php`. Now type `ctags --tag-relative -Rf.git/tags --exclude=node_modules --exclude=.git --languages=-javascript,sql`. That will:
+- recursively generate your tags
+- write the file inside your `.git` directory, so it is automatically read by Vim Fugitive
+- ignore all fies in the `node_modules` folder when generating tags
+- ignore all file int he `.git` directory folder when generating tags
 
-**Second**: Tell Vim about your tags. The easiest way to to add a project level `.vimrc` file `set tags+=./tags,tags,~/Path/to/your/site/tags`. That final path should be to the tags file set at the same level as your project `wp-config.php`.
-
-**Third**: Generate tags again after some changes. I'm told that you can get your CTags generating for yourself on a git hook but I've had trouble which probably has more to do with my bash skills than anything. Here is the [issue](https://github.com/curtismchale/WPTT-Vim-Config/issues/5) for me to figure it out and the link to the tutorial on setting it up.
-
-Example (to be run from root of the project):
-`ctags -R --exclude=node_modules; echo 'set tags+=./tags,tags,tags'>.vimrc`
+**Second**: Generate tags again after some changes. I'm told that you can get your tags generating for yourself on a git hook but I've had trouble which probably has more to do with my bash skills than anything. Here is the [issue](https://github.com/curtismchale/WPTT-Vim-Config/issues/5) for me to figure it out and the link to the tutorial on setting it up.
 
 Once, this command is run re-open your files in Vim and
-completion (using `Ctrl+p` or `Tab`) should use the ctags generated
+completion (using `Ctrl+p` or `Tab`) should use the tags generated
 information.
