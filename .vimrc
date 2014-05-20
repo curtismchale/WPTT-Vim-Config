@@ -83,6 +83,8 @@ set statusline+=\ %P                    " percent through file
 """""""""""""""""""""""""""
 " ignore case when searching
 set ignorecase
+" ...unless the search uses uppercase letters
+set smartcase
 
 " highlight search results
 set hlsearch
