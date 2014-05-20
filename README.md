@@ -170,7 +170,7 @@ Ctags are very powerful but always feel like dark magic. There are a few steps t
 - ignore all files in the `node_modules` folder when generating tags
 - ignore all files in the `.git` directory folder when generating tags
 
-**Second**: Generate tags again after some changes. I'm told that you can get your tags generating for yourself on a git hook but I've had trouble which probably has more to do with my bash skills than anything. Here is the [issue](https://github.com/curtismchale/WPTT-Vim-Config/issues/5) for me to figure it out and the link to the tutorial on setting it up.
+**Second**: Generate tags again after some changes. I'm told that you can get your tags generating for yourself on a git hook but I've had trouble which probably has more to do with my bash skills than anything. Here is the [issue](https://github.com/curtismchale/WPTT-Vim-Config/issues/5) for me to figure it out and the link to the tutorial on setting it up. You may actually look at [this awesome project](https://github.com/ironcodestudio/ironcode-git-enhancements) to enhance git and get the generated CTags working.
 
 Once, this command is run re-open your files in Vim and
 completion (using `Ctrl+p` or `Tab`) should use the tags generated
