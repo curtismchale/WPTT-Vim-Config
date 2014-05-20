@@ -186,6 +186,9 @@ set iskeyword+=$
 " Disable output and VCS files
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
 
+" Disable image files
+set wildignore+=*.psd,*.png,*.jpg,*.gif,*.jpeg
+
 " Disable archive files
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 
