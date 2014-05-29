@@ -204,6 +204,8 @@ set wildignore+=*/node_modules/*,*.min.js
 " WP Language files
 set wildignore+=*.pot,*.po,*.mo
 
+" Fonts and such
+set wildignore+=*.eot,*.eol,*.ttf,*.otf,*.afm,*.ffil,*.fon,*.pfm,*.pfb,*.woff,*.svg,*.std,*.pro,*.xsf
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => View Ports
