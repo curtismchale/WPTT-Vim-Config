@@ -78,6 +78,8 @@ set statusline+=%c,                     " cursor column
 set statusline+=%l/%L                   " cursor line/total lines
 set statusline+=\ %P                    " percent through file
 
+let g:wordpress_vim_ctags_path='/usr/local/bin/ctags'
+
 """""""""""""""""""""""""""
 " => Searching Stuff
 """""""""""""""""""""""""""
