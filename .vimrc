@@ -172,6 +172,8 @@ set ruler
 
 autocmd FileType c,cpp,css,java,php,javascript,scss autocmd BufWritePre * :%s/\s\+$//e    " remove trailing spaces on save
 
+autocmd FileType *.md set wrap|set linebreak|set nolist
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Modify word boundary characters
