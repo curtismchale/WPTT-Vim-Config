@@ -19,6 +19,7 @@ Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/Smart-Tabs'
+Bundle 'editorconfig/editorconfig-vim'
 
 " Hints
 Bundle 'ervandew/supertab'
