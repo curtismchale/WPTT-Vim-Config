@@ -227,9 +227,9 @@ noremap <leader>= <C-w>=
 "http://learnvimscriptthehardway.stevelosh.com/chapters/10.html
 inoremap jk <esc>
 
-" Map 
-" :A $symbol 
-" to 
+" Map
+" :A $symbol
+" to
 " :Align $symbol
 " as a shortcut for vim-align plugin
 com! -bang -range -nargs=* A <line1>,<line2>call Align#Align(<bang>0,<q-args>)
