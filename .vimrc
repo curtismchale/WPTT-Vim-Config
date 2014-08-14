@@ -103,6 +103,11 @@ nnoremap <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
 let g:ctrlp_custom_ignore =['debug[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
 
+" phpcomplete disable Ctrl+] (was conflicting)
+" see https://github.com/curtismchale/WPTT-Vim-Config/issues/62
+" https://github.com/shawncplus/phpcomplete.vim/issues/48
+let g:phpcomplete_enhance_jump_to_definition = 0
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
