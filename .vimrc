@@ -184,7 +184,7 @@ augroup END
 " add command :WWS
 " Write With Spaces - allows the write command to execute while suspending
 " autocmd (i.e. saves without regexp to remove trailing spaces)
-command WWS noautocmd w
+command! WWS noautocmd w
 
 autocmd FileType *.md set wrap|set linebreak|set nolist
 
