@@ -176,7 +176,15 @@ set backspace=indent,eol,start                          " backspace through ever
 set number
 set ruler
 
-autocmd FileType c,cpp,css,java,php,javascript,scss autocmd BufWritePre * :%s/\s\+$//e    " remove trailing spaces on save
+augroup remove_trailing_whitespace
+	autocmd!
+	autocmd FileType c,cpp,css,java,php,javascript,scss autocmd BufWritePre * :%s/\s\+$//e
+augroup END
+
+" add command :WWS
+" Write With Spaces - allows the write command to execute while suspending
+" autocmd (i.e. saves without regexp to remove trailing spaces)
+command! WWS noautocmd w
 
 autocmd FileType *.md set wrap|set linebreak|set nolist
 
