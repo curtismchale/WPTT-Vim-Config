@@ -99,7 +99,7 @@ set incsearch
 nnoremap <leader>f :Ack<space>
 
 " CTRL P
-nnoremap <leader>p :CtrlPTag<cr>
+nnoremap <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>r :ClearCtrlPCache<cr>
 let g:ctrlp_custom_ignore =['debug[[dir]]', 'gravity[[dir]]', 'akismet[[dir]]', 'user-switching[[dir]]', 'wp-migrate-db-pro[[dir]]', 'upgrade[[dir]]', 'uploads[[dir]]', 'twenty*[[dir]]']
 
