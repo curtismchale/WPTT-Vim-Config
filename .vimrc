@@ -43,7 +43,8 @@ Bundle 'rizzatti/dash.vim'
 
 " Misc
 Bundle 'tyru/open-browser.vim'
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 
 " Git
 Bundle 'tpope/vim-fugitive'
