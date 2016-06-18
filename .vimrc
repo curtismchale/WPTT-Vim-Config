@@ -32,6 +32,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'StanAngeloff/php.vim'
+Bundle 'amix/vim-zenroom'
 
 " colors
 Bundle 'altercation/vim-colors-solarized'
