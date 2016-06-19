@@ -152,7 +152,11 @@ set background=dark
 colorscheme solarized
 
 " setting my default font sizes
-set guifont=Monaco:h13
+if has( "gui_gtk2" )
+	set guifont=Monospace\ 10
+elseif has ( "gui_macvim" )
+	set guifont=Monospace:h13
+end
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
