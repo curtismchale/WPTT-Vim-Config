@@ -82,6 +82,7 @@ set statusline+=%l/%L                   " cursor line/total lines
 set statusline+=\ %P                    " percent through file
 
 let g:wordpress_vim_ctags_path='/usr/local/bin/ctags'
+let g:wordpress_vim_wordpress_path='~/Sites/woodev/wp'
 
 """""""""""""""""""""""""""
 " => Searching Stuff
@@ -99,6 +100,7 @@ set incsearch
 
 " mapping search with Ack
 nnoremap <leader>f :Ack<space>
+let g:ackprg="ag --vimgrep"
 
 " CTRL P
 nnoremap <leader>p :CtrlP<cr>
