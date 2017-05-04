@@ -150,6 +150,7 @@ syntax on
 set encoding=utf8
 
 " Setting solarized dark
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
