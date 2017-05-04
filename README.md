@@ -25,6 +25,11 @@ There are a few dependencies that you'll need that don't come with the repositor
 1. [Exuberant CTags](http://ctags.sourceforge.net/) - `brew install ctags`. If you don't have homebrew installed [go get it](http://brew.sh/)
 2. [Ack](http://beyondgrep.com/) - `brew install ack`
 
+#### Install Dependences on Ubuntu
+
+`sudo apt-get install exuberant-ctags`
+`sudo apt-get install ack-grep`
+
 ### Problems with Git Commit Messages
 On a Mac, if you're getting the message
 ```
