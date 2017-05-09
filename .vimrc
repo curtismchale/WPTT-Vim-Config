@@ -100,7 +100,9 @@ set incsearch
 
 " mapping search with Ack
 nnoremap <leader>f :Ack<space>
-let g:ackprg="ag --vimgrep"
+if executable('ag')
+	let g:ackprg="ag --vimgrep"
+endif
 
 " CTRL P
 nnoremap <leader>p :CtrlP<cr>
@@ -287,4 +289,5 @@ nnoremap <leader>tt4 :set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab<CR>
 " => Dealing with folding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:vim_markdown_folding_disabled=1 " turn off folding on markdown files
+au BufRead,BufNewFile *.md setlocal textwidth=80
 
