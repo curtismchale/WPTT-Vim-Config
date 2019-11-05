@@ -36,6 +36,17 @@ Bundle 'amix/vim-zenroom'
 
 " colors
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'rakr/vim-one'
+Bundle 'NLKNguyen/papercolor-theme' 
+Bundle 'eemed/noxtra'
+Bundle 'kyledoherty/espresso-colors-vim'
+Bundle 'sainnhe/vim-color-vanilla-cake'
+Bundle 'sainnhe/vim-color-grimoire'
+Bundle 'benburrill/potato-colors'
+Bundle 'nightsense/snow'
+Bundle 'wimstefan/vim-artesanal'
+Bundle 'schickele/vim-fruchtig'
+Bundle 'kadekillary/subtle_solo'
 
 " Dash
 Bundle 'rizzatti/funcoo.vim'
@@ -70,7 +81,7 @@ set clipboard=unnamed
 """""""""""""""""""""""""""
 set laststatus=2                        " Enable statusline
 set t_Co=256
-let g:airline_theme='solarized'
+let g:airline_theme='PaperColor'
 
 set statusline=
 set statusline+=%{fugitive#statusline()} " Add git status from vim-fugitive plugin
@@ -151,9 +162,9 @@ syntax on
 set encoding=utf8
 
 " Setting solarized dark
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+"let g:solarized_termcolors=256
+set background=light
+colorscheme PaperColor
 
 " setting my default font sizes
 if has( "gui_gtk2" )
