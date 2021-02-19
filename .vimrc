@@ -18,7 +18,7 @@ Bundle 'tsaleh/vim-align'
 Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'vim-scripts/Smart-Tabs'
+Bundle 'junegunn/vim-easy-align'
 Bundle 'editorconfig/editorconfig-vim'
 
 " Hints
@@ -264,9 +264,15 @@ inoremap jk <esc>
 " Map
 " :A $symbol
 " to
-" :Align $symbol
-" as a shortcut for vim-align plugin
-com! -bang -range -nargs=* A <line1>,<line2>call Align#Align(<bang>0,<q-args>)
+" :EasyAlign $symbol
+" as a shortcut for vim-easy-align plugin
+com! -bang -range -nargs=* A <line1>,<line2>call easy_align#align('<bang>' == '!', 0, '', <q-args>)
+
+" Map <Enter> in Visual Mode to Interactive EasyAlign (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+
+" Map <leader>a to interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
+nmap <Leader>a <Plug>(EasyAlign)
 
 " Map <leader>ev (i.e. \ev) to edit .vimrc
 " and <leader>sv to source (apply) .vimrc
